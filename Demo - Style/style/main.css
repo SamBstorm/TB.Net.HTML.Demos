@@ -1,0 +1,19 @@
+h1{
+    color:green;
+    font-style: italic;
+}
+
+/* .nom_de_la_classe pour sélectionner une classe*/
+/* color: couleur du texte*/
+.rouge{
+    color: red;
+}
+/* background-color : couleur de fond */
+.bg-orange{
+    background-color: orange;
+}
+
+/* #identifiant pour sélectionner un identifiant spécifique*/
+#test-id{
+    background-color: blueviolet;
+}

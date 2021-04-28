@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Alkemikal";
+    src: url(../fonts/Alkhemikal.ttf);
+}
+
+*{
+    font-family: "Alkemikal", serif;
+    font-style: italic;
+    color:#ebe9e7;
+}
+body{
+    /* background-color: #f24236; */
+    /* background-image: url("../assets/WebBackGround.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    /* background:url("../assets/WebBackGround.jpg") left top repeat-y,
+    url("../assets/SecondBackGround.jpg") right bottom repeat-x; */
+    background-image: url("../assets/top-bg.jpg") ;
+}
+
+.container{
+    background-color: #470a7077; /* rgb : Red Green Blue */ /*rgba : Red Green Blue Alpha*/
+    height: 512px;
+    overflow: scroll;
+}

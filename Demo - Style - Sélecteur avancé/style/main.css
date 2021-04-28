@@ -1,0 +1,48 @@
+*{
+    color:black;
+}
+
+a{
+    text-decoration: none;
+}
+
+article {
+    font-size: 1.5rem;
+}
+
+article p {
+    text-align: justify;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span{
+    font-size: 1.2em;
+    color :darkblue;
+}
+
+article>h2{
+    color: orange;
+    text-transform: uppercase;
+}
+
+section article{
+    background-color: blanchedalmond;
+}
+
+#main .danger{
+    color:darkred;
+    font-weight: bold;
+}
+
+article~article{
+    color:blue;
+}
+
+article+article{
+    color:blue;
+}
+
+img[src="./assets/logo.png"]{
+    background-color: pink;
+    width : 200px;
+    height:64px;
+}
