@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <style>
+body{
+    background-color: black;
+}
+.border{
+    box-sizing: border-box;
+}
+.content{
+    box-sizing: content-box;
+}
+
+body>div{
+    background-color: white;
+    width: 256px;
+    height: 256px;
+}
+
+div div{
+    margin : 64px;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    resize: both;
+    box-shadow: 0 5px 5px cyan;
+}
+div:hover>div:nth-child(2n+0){
+    box-shadow: 0 10px 25px white;
+    width: 64px;
+    height:64px;
+    background-color: cyan;
+    border-radius: 50%;
+}
+h1{
+    color: rgb(46, 11, 11);
+    text-shadow: 2px 2px 5px rgb(255, 81, 0);
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>SALUT A TOUS!</h1>
+    <div>
+        <div class="border">
+            <div></div>
+        </div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>

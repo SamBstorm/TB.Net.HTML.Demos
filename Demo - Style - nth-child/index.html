@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div>div{
+            width: 256px;
+            height: 32px;
+        }
+        div{
+            border:1px black solid;
+        }
+        div>div:nth-child(even){
+            background-color: grey;
+        }
+        div>div:nth-child(odd){
+            background-color: cornflowerblue;
+        }
+        div>div:nth-child(0n+1){
+            background-color: red;
+        }
+        div>div:last-child{
+            background-color: darkblue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
