@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo - Formulaire inscription</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <section>
+        <h1>Veuillez remplir ce formulaire:</h1>
+        <form method="POST" action="index.html" enctype="multipart/form-data">
+            <!-- <div>Search : <input name="search" type="search" minlength="2" maxlength="32" ></div> -->
+            <fieldset>
+                <legend>Données personnelle</legend>
+                <div>
+                    <label for="idNom">Nom:</label>
+                    <input id="idNom" name="lastname" type="text" minlength="2" maxlength="32"
+                        placeholder="2 à 32 caractères" required autocomplete tabindex="0">
+                    <div class="MessageErreur">Veuillez entrer le nom</div>
+                </div>
+                <div>Prénom : <input name="firstname" type="text" size="16" required tabindex="1" disabled></div>
+                <div>Photo de profil <input type="file" name="photo" accept="image/png,image/jpeg" tabindex="2"></div>
+                <div>Nombre d'enfants : <input type="number" name="nbEnfants" value="42" readonly> </div>
+                <div>Date de naissance : <input type="date" step="3" tabindex="3"></div>
+                <div><label for="Province">Province de Naissance : </label>
+                    <select name="provinceNaissance" id="Province" tabindex="20">
+                        <optgroup label="Wallonie">
+                            <option value="0">Namur</option>
+                            <option value="1">Liège</option>
+                            <option value="2">Hainaut</option>
+                            <option value="3">Luxembourg</option>
+                            <option value="4">Brabant Wallon</option>
+                        </optgroup>
+                        <optgroup label="Flandre">
+                            <option value="5">Anvers</option>
+                            <option value="6">Flandre Occid.</option>
+                            <option value="7">Flandre Orient.</option>
+                            <option value="8">Limbourg</option>
+                            <option value="9">Brabant Flamand</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <!-- <div>Province : <input type="text" list="province"></div>
+            <datalist id="province">
+                <option value="Namur">
+                <option value="Liège">
+                <option value="Hainaut">
+                <option value="Luxembourg">
+                <option value="Brabant Wallon">
+            </datalist> -->
+            <div>E-mail : <input type="email" name="mail" placeholder="exemple@domaine.ext" tabindex="20"></div>
+            <div>Mot de passe : <input type="password" name="motDePasse" tabindex="4"></div>
+            <div>Téléphone : <input type="tel" name="phone" pattern="[0-9+]{1}[0-9]{7,13}" tabindex="20"></div>
+            <div>Site web : <input type="url" name="website" tabindex="20"></div>
+            <!-- <div>Couleur préféré : <input type="color"></div>
+            <div>Votre heure de pause préféré : <input type="time" step="900000"></div>
+            <div>Soyez précis : <input type="datetime-local"></div> -->
+            <div>Votre commentaire : <textarea rows="3" cols="90" autofocustabindex="20"></textarea></div>
+            <div>Êtes vous d'accord avec notre contrat de confidentialité ? <input name="confident" type="checkbox"
+                    requiredtabindex="20"></div>
+
+            <div>
+                <label for="idRadFemme">Femme</label><input type="radio" name="gender" id="idRadFemme" value="F"
+                    tabindex="20">
+                <label for="idRadHomme">Homme</label><input type="radio" name="gender" id="idRadHomme" value="H"
+                    tabindex="20">
+                <label for="idRadOther">Autre</label><input type="radio" name="gender" id="idRadOther" value="X"
+                    tabindex="20">
+            </div>
+            <input type="submit" value="Enregistrer" tabindex="20">
+            <input type="button" value="Je suis un bouton!" onclick="alert('toto')" tabindex="20">
+            <input type="reset" value="Cancel" tabindex="20">
+            <!-- <button>Je suis un vrai button, pas un input</button> -->
+        </form>
+    </section>
+</body>
+
+</html>

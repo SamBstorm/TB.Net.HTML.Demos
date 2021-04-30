@@ -1,0 +1,9 @@
+input:required:invalid+.MessageErreur {
+    display: block;
+}
+
+.MessageErreur {
+    display: none;
+    background-color: red;
+    color: white;
+}

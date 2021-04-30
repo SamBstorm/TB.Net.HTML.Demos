@@ -1,0 +1,17 @@
+div{
+    height: 128px;
+    width: 128px;
+
+    border: 3px solid red;
+    margin: 256px auto;
+
+    transition-property: all;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+div:hover{
+    border-radius: 50%;
+    border-color: blue;
+    transition-duration: 5s;
+}
